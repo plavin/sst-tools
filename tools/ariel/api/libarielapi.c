@@ -20,3 +20,12 @@ void ariel_enable() {
 uint64_t ariel_cycles() {
 	return 0;
 }
+
+void ariel_phase(int phase) {
+	printf("ARIEL-CLIENT: Program has specified phase %d\n", phase);
+}
+
+void ariel_flushline(void *ptr) {
+	printf("ARIEL-CLIENT: Program requested flushing address %x\n", ptr);
+}
+

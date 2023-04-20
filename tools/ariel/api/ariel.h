@@ -21,6 +21,8 @@ extern "C" {
 
 void ariel_enable();
 uint64_t ariel_cycles();
+void ariel_phase(int);
+void ariel_flushline(void *);
 
 #if defined(c_plusplus) || defined(__cplusplus)
 }
